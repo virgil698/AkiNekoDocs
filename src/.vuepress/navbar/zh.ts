@@ -2,10 +2,24 @@ import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   "/zh/",
-  "/zh/portfolio",
-  "/zh/demo/",
   {
-    text: "指南",
+    text: "插件列表",
+    icon: "puzzle-piece",
+    children: [
+      {
+        text: "AkiAsync 异步优化",
+        icon: "gauge-high",
+        link: "/zh/akiasync/",
+      },
+      {
+        text: "NetherPortalFix 地狱门修复",
+        icon: "door-open",
+        link: "/zh/akiasync_netherportalfix/",
+      },
+    ],
+  },
+  {
+    text: "模组列表",
     icon: "lightbulb",
     prefix: "/zh/guide/",
     children: [
@@ -22,10 +36,5 @@ export const zhNavbar = navbar([
         children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
       },
     ],
-  },
-  {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
   },
 ]);

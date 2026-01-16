@@ -8,13 +8,13 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Docs Demo",
-      description: "A docs demo for vuepress-theme-hope",
+      title: "Aki & Neko Docs",
+      description: "Documentation for Aki & Neko Minecraft server plugins and mods",
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
+      title: "Aki & Neko 文档",
+      description: "Aki & Neko 系列 Minecraft 服务端插件与模组文档",
     },
   },
 

@@ -7,7 +7,7 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
+    name: "Virgil698 & AnkiSama",
     url: "https://mister-hope.com",
   },
 
@@ -29,6 +29,9 @@ export default hopeTheme({
 
       displayFooter: true,
 
+      // 隐藏作者信息
+      pageInfo: ["Date", "ReadingTime", "Category", "Tag"],
+
       metaLocales: {
         editLink: "Edit this page on GitHub",
       },
@@ -47,6 +50,9 @@ export default hopeTheme({
       footer: "默认页脚",
 
       displayFooter: true,
+
+      // 隐藏作者信息
+      pageInfo: ["Date", "ReadingTime", "Category", "Tag"],
 
       // page meta
       metaLocales: {
@@ -139,15 +145,14 @@ export default hopeTheme({
   },
 
   plugins: {
-    // Note: This is for testing ONLY!
-    // You MUST generate and use your own comment service in production.
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // 评论功能已关闭
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     components: {
       components: ["Badge", "VPCard"],
